@@ -1,12 +1,13 @@
 #include <iostream>
 #include "horse.h"
-//#include "race.h"
+#include "race.h"
 int main(){
 	Horse a;
-	std::cout<<"Hello" << std::endl;
-	
-	a.init(0,14);
-	a.printLane();
+	std::cout << "Hi there !" << std::endl;
+	for (int i = 0; i < horseNum; i++){
+		Horse i;
+		i.init(0, 14);	
+	} // end for
 
 	return 0;
 } // end main
