@@ -3,7 +3,10 @@
 //#include "race.h"
 int main(){
 	Horse a;
-	std::cout<<"Hello"<< a.printLane() << std::endl;
+	std::cout<<"Hello" << std::endl;
+	
+	a.init(0,14);
+	a.printLane();
 
 	return 0;
 } // end main

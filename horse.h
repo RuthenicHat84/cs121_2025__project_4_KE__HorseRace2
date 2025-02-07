@@ -12,7 +12,7 @@ class Horse {
 		Horse();
 		void init(int id, int trackLength);
 		void advance();
-		int printLane();
+		void printLane();
 		bool isWinner();
 
 }; // end Horse Class Header
