@@ -11,7 +11,7 @@ Race::Race(){
 } // end race
 
 
-Race::Run(){
+void Race::Run(){
 	bool running = true;
 	while(running){
 		
@@ -20,12 +20,12 @@ Race::Run(){
 
 		for(int i = 0; i < Race::RACERLIMIT; i++){
 
-			if(i.isWinner()){
+			if(i.Horse::isWinner()){
 				running = false;
 			} // end for
 			else{
-				i.advance();
-				i.printLane();
+				i.Horse::advance();
+				i.Horse::printLane();
 			} // end else
 
 		} // end for

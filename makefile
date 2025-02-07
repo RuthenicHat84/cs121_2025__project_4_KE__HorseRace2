@@ -1,5 +1,5 @@
-game: horse.o race.o main.o
-	g++ -g horse.o race.o main.o -o game
+horseRace2: horse.o race.o main.o
+	g++ -g horse.o race.o main.o -o horseRace2
 
 main.o: horse.h race.h main.cpp 
 	g++ -c -g main.cpp
@@ -12,10 +12,10 @@ race.o: horse.h race.h race.cpp
 
 clean:
 	rm *.o
-	rm game
+	rm horseRace2
 
-run: game
-	./game
+run: horseRace2
+	./horseRace2
 
-debug: game
-	gdb game
+debug: horseRace2
+	gdb horseRace2
