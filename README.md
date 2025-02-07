@@ -2,6 +2,6 @@
 
 Horse Race but in OOP
 
-##to start, type 
+## to start, type 
 
-###make run
+### make run
