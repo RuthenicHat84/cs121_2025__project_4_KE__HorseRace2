@@ -1,13 +1,14 @@
+// main.cpp start
+
 #include <iostream>
 #include "horse.h"
 #include "race.h"
-int main(){
-	Horse a;
-	std::cout << "Hi there !" << std::endl;
-	for (int i = 0; i < horseNum; i++){
-		Horse i;
-		i.init(0, 14);	
-	} // end for
 
+
+int main(){
+	Race horseRace;
+	horseRace.Run();
 	return 0;
 } // end main
+
+//main.cpp end

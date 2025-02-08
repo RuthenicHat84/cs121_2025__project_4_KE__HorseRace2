@@ -7,10 +7,10 @@
 
 class Race {
 	private:
-		static const int TRACKLENGTH;
+		static const int TRACKLENGTH = 15;
 		static const int RACERLIMIT = 5;
 		Horse racers[RACERLIMIT];
-	private:
+	public:
 		Race();
 		void Run();
 }; // end class def

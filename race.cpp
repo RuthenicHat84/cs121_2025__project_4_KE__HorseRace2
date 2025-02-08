@@ -1,17 +1,23 @@
 // race.cpp start
 
+#include <iostream>
 #include "race.h"
-
+#include "horse.h"
 
 Race::Race(){
-	Race::TRACKLENGTH = 15;
-	Race::horses[RACERLIMIT] = Horse();
+	Race::racers[RACERLIMIT] = Horse();
 
 } // end constructor
 
 
 void Race::Run(){
+	
 	bool running = true;
+
+	for (int i = 0; i < Race::RACERLIMIT; i++){
+		Race::racers[i].init(i, TRACKLENGTH);
+	} // end for
+
 	while(running){
 		
 		std::cout << "Press Enter to continue" << std::endl;
@@ -19,12 +25,12 @@ void Race::Run(){
 
 		for(int i = 0; i < Race::RACERLIMIT; i++){
 
-			if(racers[i].Horse::isWinner()){
+			if(Race::racers[i].isWinner()){
 				running = false;
 			} // end for
 			else{
-				horses[i].Horse::advance();
-				[i].Horse::printLane();
+				Race::racers[i].printLane();
+				Race::racers[i].advance();
 			} // end else
 
 		} // end for

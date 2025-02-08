@@ -27,6 +27,7 @@ void Horse::advance(){
 } // end advance
 
 void Horse::printLane(){
+	std::cout << "~~~~~~~~~~~~~~~" << std::endl;
 	std::string track[Horse::trackLength];
 	for (int i = 0; i < Horse::trackLength; i++){
 		if (i == Horse::pos){
@@ -35,15 +36,22 @@ void Horse::printLane(){
 			std::cout << track[i];
 		} // end if
 		else{
-			track[i] = '-';
+			track[i] = '.';
 			std::cout << track[i];
 		} // end else
 	} // end for
 	std::cout << std::endl;
+	std::cout << "~~~~~~~~~~~~~~~" << std::endl;
 } // end printLane
 
 bool Horse::isWinner(){
-	return Horse::pos >= Horse::trackLength;
+	if  (Horse::pos >= Horse::trackLength){
+		std::cout << "HORSE " << Horse::id << " WINS!!!" << std::endl;
+		return true;
+	} // end if
+	else{
+		return false;
+	} // end else
 	
 } // end isWinner
 
