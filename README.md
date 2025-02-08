@@ -4,6 +4,8 @@ Horse Race but in OOP
 
 a collection of 5 horses (can be changed by altering the values in the code) race down a track that is 15 units long (also changable). the first one to cross over the finish wins. This program is compiled with multiple files, and comes with a makefile for easy creation of the game and debugging. 
 
+to run game input either "./horseRace2" or "make run" into the terminal
+
 
 # ULM
 
