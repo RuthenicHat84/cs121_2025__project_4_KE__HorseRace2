@@ -5,10 +5,9 @@
 
 Race::Race(){
 	Race::TRACKLENGTH = 15;
-	Race::RACERLIMIT = 5;
 	Race::horses[RACERLIMIT] = Horse();
 
-} // end race
+} // end constructor
 
 
 void Race::Run(){
@@ -20,12 +19,12 @@ void Race::Run(){
 
 		for(int i = 0; i < Race::RACERLIMIT; i++){
 
-			if(i.Horse::isWinner()){
+			if(racers[i].Horse::isWinner()){
 				running = false;
 			} // end for
 			else{
-				i.Horse::advance();
-				i.Horse::printLane();
+				horses[i].Horse::advance();
+				[i].Horse::printLane();
 			} // end else
 
 		} // end for

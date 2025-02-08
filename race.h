@@ -8,7 +8,7 @@
 class Race {
 	private:
 		static const int TRACKLENGTH;
-		const int RACERLIMIT;
+		static const int RACERLIMIT = 5;
 		Horse racers[RACERLIMIT];
 	private:
 		Race();
